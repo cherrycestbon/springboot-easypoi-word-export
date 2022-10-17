@@ -28,4 +28,30 @@ public class UserController {
     public void exportUsersToWord(HttpServletResponse response) throws Exception {
         userService.exportUsersToWord(response);
     }
+
+    /**
+     * word文档导出到一个模板中
+     */
+    @GetMapping("export-word-all")
+    public void exportUsersToWordAll(HttpServletResponse response) throws Exception {
+        userService.exportUsersToWordAll(response);
+    }
+
+    /**
+     * word文档导出
+     */
+    @GetMapping("export-word-image")
+    public void exportUsersToWordImage(HttpServletResponse response) throws Exception {
+        userService.exportUsersToWordImage(response);
+    }
+
+    /**
+     * word文档导出到一个模板中
+     */
+    @GetMapping("export-word-all-image")
+    public void exportUsersToWordAllImage(HttpServletResponse response) throws Exception {
+        userService.exportUsersToWordAllImage(response);
+    }
+
+
 }

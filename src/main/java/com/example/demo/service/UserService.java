@@ -20,4 +20,25 @@ public interface UserService extends IService<User> {
      * @throws Exception
      */
     void exportUsersToWord(HttpServletResponse response) throws Exception;
+
+    /**
+     * word文档导出到一个模板中
+     * @param response
+     * @throws Exception
+     */
+    void exportUsersToWordAll(HttpServletResponse response) throws Exception;
+
+    /**
+     * word文档导出带图片
+     * @param response
+     * @throws Exception
+     */
+    void exportUsersToWordImage(HttpServletResponse response) throws Exception;
+
+    /**
+     * word文档导出到一个模板中带图片
+     * @param response
+     * @throws Exception
+     */
+    void exportUsersToWordAllImage(HttpServletResponse response) throws Exception;
 }
